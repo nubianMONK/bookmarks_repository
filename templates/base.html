@@ -1,6 +1,6 @@
 {% extends "bootstrap/base.html" %}
 
-{% block title %}Reverse Flask{% endblock %}
+{% block title %}Bookmark Repository{% endblock %}
 
 {% block head %}
 {{ super() }}
@@ -18,11 +18,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://github.com/nubianMONK/python-devtest/tree/master/part2/reverse_flask_akinkunmi">Reverse Flask</a>
+            <a class="navbar-brand" href="https://github.com/nubianMONK/bookmarks_repository">Bookmark Repository - Flask</a>
+			<a class="navbar-brand" href="{{ url_for('add_bookmark') }}">Add Bookmark</a>
+			<a class="navbar-brand" href="{{ url_for('bookmarks') }}">All Bookmarks</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
+               				
             </ul>
         </div>
     </div>
