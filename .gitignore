@@ -1,6 +1,6 @@
 #python specific
 *.pyc
- 
+
 ## generic files to ignore
 flask_session
 *~
@@ -8,3 +8,6 @@ flask_session
 *.DS_Store
 *.swp
 *.out
+
+venv
+env
